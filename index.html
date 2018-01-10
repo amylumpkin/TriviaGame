@@ -15,9 +15,7 @@
 	   <h2>Who Sang These Lyrics?<br>Kids of the 80's...you know you love them!<br>Answer all correctly within 30 seconds to win!</h2>
 	   <a class="btn btn-primary btn-md" id="start"> START </a>
 
-<!---next two lines unsure of-->
-	        <a id="displayText" href="javascript:toggle();"></a> 
-            <div id="toggleText" style="display: none"><h1>peek-a-boo</h1></div>
+
 <!--how do I hide everything below on page load?-->
 
 	   <a class="btn btn-primary btn-md" id="submit"> SUBMIT ANSWERS </a>
@@ -28,6 +26,7 @@
     </div>
 
 <!--I'm sure it would be best to have the questions in JS, but I'll tackle that after I get it all working-->
+
             <div class="row question">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="panel panel-default">
@@ -35,10 +34,10 @@
                         </div>
                           <div class="panel-body">
                             <form>
-                              <input type="radio" name="q1" value="a"> Twisted Sister<br>
-                              <input type="radio" name="q1" value="b"> Skid Row<br>
-                              <input type="radio" name="q1" value="c"> Slaughter<br> 
-                              <input type="radio" name="q1" value="d"> Poison<br>
+                              <input type="radio" name="q1" value="a" class="incorrect"> Twisted Sister<br>
+                              <input type="radio" name="q1" value="b" class="correct"> Skid Row<br>
+                              <input type="radio" name="q1" value="c" class="incorrect"> Slaughter<br> 
+                              <input type="radio" name="q1" value="d" class="incorrect"> Poison<br>
                             </form>
 
                           </div>                   
@@ -53,10 +52,10 @@
                         </div>
                           <div class="panel-body">
                             <form>
-                              <input type="radio" name="q2" value="a"> Pat Benetar<br>
-                              <input type="radio" name="q2" value="b"> Samantha Fox<br>
-                              <input type="radio" name="q2" value="c"> Lita Ford<br> 
-                              <input type="radio" name="q2" value="d"> Joan Jett<br>
+                              <input type="radio" name="q2" value="a" class="incorrect"> Pat Benetar<br>
+                              <input type="radio" name="q2" value="b" class="incorrect"> Samantha Fox<br>
+                              <input type="radio" name="q2" value="c" class="correct"> Lita Ford<br> 
+                              <input type="radio" name="q2" value="d" class="incorrect"> Joan Jett<br>
                             </form>
 
                           </div>                   
@@ -71,10 +70,10 @@
                         </div>
                           <div class="panel-body">
                             <form>
-                              <input type="radio" name="q3" value="a"> Poison<br>
-                              <input type="radio" name="q3" value="b"> Motley Crue<br>
-                              <input type="radio" name="q3" value="c"> Def Leppard<br> 
-                              <input type="radio" name="q3" value="d"> Warrant<br>
+                              <input type="radio" name="q3" value="a" class="correct"> Poison<br>
+                              <input type="radio" name="q3" value="b" class="incorrect"> Motley Crue<br>
+                              <input type="radio" name="q3" value="c" class="incorrect"> Def Leppard<br> 
+                              <input type="radio" name="q3" value="d" class="incorrect"> Warrant<br>
                             </form>
 
                           </div>                   
@@ -89,10 +88,10 @@
                         </div>
                           <div class="panel-body">
                             <form>
-                              <input type="radio" name="q4" value="a"> Poison<br>
-                              <input type="radio" name="q4" value="b"> Motley Crue<br>
-                              <input type="radio" name="q4" value="c"> Def Leppard<br> 
-                              <input type="radio" name="q4" value="d"> Warrant<br>
+                              <input type="radio" name="q4" value="a" class="incorrect"> Poison<br>
+                              <input type="radio" name="q4" value="b" class="incorrect"> Motley Crue<br>
+                              <input type="radio" name="q4" value="c" class="correct"> Def Leppard<br> 
+                              <input type="radio" name="q4" value="d" class="incorrect"> Warrant<br>
                             </form>
 
                           </div>                   
@@ -107,16 +106,18 @@
                         </div>
                           <div class="panel-body">
                             <form>
-                              <input type="radio" name="q5" value="a"> Quiet Riot<br>
-                              <input type="radio" name="q5" value="b"> Guns n' Roses<br>
-                              <input type="radio" name="q5" value="c"> Scorpions<br> 
-                              <input type="radio" name="q5" value="d"> Ratt<br>
+                              <input type="radio" name="q5" value="a" class="incorrect"> Quiet Riot<br>
+                              <input type="radio" name="q5" value="b" class="correct"> Guns n' Roses<br>
+                              <input type="radio" name="q5" value="c" class="incorrect"> Scorpions<br> 
+                              <input type="radio" name="q5" value="d" class="incorrect"> Ratt<br>
                             </form>
 
                           </div>                   
                     </div>
                 </div>
             </div>
+
+            
 
 
     

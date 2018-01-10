@@ -7,6 +7,11 @@ $("#start").on("click", start);
 $("#submit").on("click", submit); 
 //resets the game
 $("#playAgain").on("click", playAgain); 
+
+$("input").on("click",function(){
+	console.log(this.className);
+});
+
 //declare variables for right and wrong
 
 
@@ -14,13 +19,13 @@ $("#playAgain").on("click", playAgain);
 
 
 //make different windows and decide when to hide and show
-/*function toggle() {
+/*function toggle() {.  
 	var ele = document.getElementById("toggleText");
 	var text = document.getElementById("displayText");
 	if(ele.style.display == "block") {
     		ele.style.display = "none";
 		text.innerHTML = "show";
-  	}
+  	}										?????
 	else {
 		ele.style.display = "block";
 		text.innerHTML = "hide";
@@ -40,23 +45,48 @@ function reset() {
 function start() {
 var myVar = setInterval(myTimer, 1000);
 
-var countDown = 30
+var countDown = 3
 
 function myTimer() {
     countDown --
     document.getElementById("timeRemaining").innerHTML = countDown;
     if (countDown === 0) {
     	console.log("TIME'S UP!");
-    	alert("TIME'S UP!")
+    	$(".container").css("display","none");
     	clearInterval(myVar);    //the name of my interval is 'myVar'
-    }
-    
-
-};
- };
+    };
+   };
+  };  
 });
 
+function submit() {
 
+}
+
+ //trying to mark correct and incorrect answers
+
+ /*var answers = ["a","b","c","d"], 
+    tot = answers.length;
+
+function getCheckedValue( radioName ){
+    var radios = document.getElementsByName( radioName ); // Get radio group by-name
+    for(var y=0; y<radios.length; y++)
+      if(radios[y].checked) return radios[y].value; // return the checked value
+}
+
+function getScore(){
+  var score = 0;
+  for (var i=0; i<tot; i++)
+    if(getCheckedValue("question"+i)===answers[i]) score += 1; // increment only
+  return score;
+}
+
+function returnScore(){
+  alert("Your score is "+ getScore() +"/"+ tot);
+}
+});
+
+*/
 
 // questions are revealed
 // submit button is revealed
