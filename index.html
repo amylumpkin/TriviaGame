@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Hair Band Trivia!</title>
+</head>
+<body>
+
+<div class="container">
+	<div class="jumbotron">
+	   <h1>Hair Band Trivia!</h1>
+	   <h2>Who Sang These Lyrics?<br>Kids of the 80's...you know you love them!<br>Answer all correctly within 30 seconds to win!</h2>
+	   <a class="btn btn-primary btn-md" id="start"> START </a>
+
+<!---next two lines unsure of-->
+	        <a id="displayText" href="javascript:toggle();"></a> 
+            <div id="toggleText" style="display: none"><h1>peek-a-boo</h1></div>
+<!--how do I hide everything below on page load?-->
+
+	   <a class="btn btn-primary btn-md" id="submit"> SUBMIT ANSWERS </a>
+	   <a class="btn btn-primary btn-md" id="playAgain"> PLAY AGAIN </a>
+
+    <div id="timer">
+       <h3>Time Remaining: <span id="timeRemaining">30</span></h3>
+    </div>
+
+<!--I'm sure it would be best to have the questions in JS, but I'll tackle that after I get it all working-->
+            <div class="row question">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Song #1: "Ricky was a young boy, he had a heart of stone, lived 9 to 5 and he worked his fingers to the bone..."
+                        </div>
+                          <div class="panel-body">
+                            <form>
+                              <input type="radio" name="q1" value="a"> Twisted Sister<br>
+                              <input type="radio" name="q1" value="b"> Skid Row<br>
+                              <input type="radio" name="q1" value="c"> Slaughter<br> 
+                              <input type="radio" name="q1" value="d"> Poison<br>
+                            </form>
+
+                          </div>                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="row question">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Song #2: "Went to a party last Saturday night, I didn't get laid, I got in a fight...uh huh, it ain't no big thing..."
+                        </div>
+                          <div class="panel-body">
+                            <form>
+                              <input type="radio" name="q2" value="a"> Pat Benetar<br>
+                              <input type="radio" name="q2" value="b"> Samantha Fox<br>
+                              <input type="radio" name="q2" value="c"> Lita Ford<br> 
+                              <input type="radio" name="q2" value="d"> Joan Jett<br>
+                            </form>
+
+                          </div>                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="row question">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Song #3: "We both lie silently still in the dead of the night, and through we both lie close together, we feel miles apart inside..."
+                        </div>
+                          <div class="panel-body">
+                            <form>
+                              <input type="radio" name="q3" value="a"> Poison<br>
+                              <input type="radio" name="q3" value="b"> Motley Crue<br>
+                              <input type="radio" name="q3" value="c"> Def Leppard<br> 
+                              <input type="radio" name="q3" value="d"> Warrant<br>
+                            </form>
+
+                          </div>                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="row question">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Song #4: "I'm hot, sticky sweet - from my head, to my feet yeah..."
+                        </div>
+                          <div class="panel-body">
+                            <form>
+                              <input type="radio" name="q4" value="a"> Poison<br>
+                              <input type="radio" name="q4" value="b"> Motley Crue<br>
+                              <input type="radio" name="q4" value="c"> Def Leppard<br> 
+                              <input type="radio" name="q4" value="d"> Warrant<br>
+                            </form>
+
+                          </div>                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="row question">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Song #4: "If you got the money, honey we got your disease..."
+                        </div>
+                          <div class="panel-body">
+                            <form>
+                              <input type="radio" name="q5" value="a"> Quiet Riot<br>
+                              <input type="radio" name="q5" value="b"> Guns n' Roses<br>
+                              <input type="radio" name="q5" value="c"> Scorpions<br> 
+                              <input type="radio" name="q5" value="d"> Ratt<br>
+                            </form>
+
+                          </div>                   
+                    </div>
+                </div>
+            </div>
+
+
+    
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="assets/javascript/app.js"></script>
+
+
+</body>
+</html>
