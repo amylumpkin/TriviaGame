@@ -1,10 +1,15 @@
 $(document).ready(function() {
 
+$(".questions").css("display","none");
+$(".results").css("display", "none");
+
+
 //start the game
 $("#start").on("click", start); 
 
 //submit answers if done before timer goes off
 $("#submit").on("click", submit); 
+
 //resets the game
 $("#playAgain").on("click", playAgain); 
 
@@ -34,16 +39,29 @@ var myVar = setInterval(myTimer, 1000);
 
 var countDown = 30
 
+$(".questions").css("display", "block");
+
 function myTimer() {
     countDown --
     document.getElementById("timeRemaining").innerHTML = countDown;
     if (countDown === 0) {
-    	console.log("TIME'S UP!");
+    	console.log("timer reached zero");
     	$(".questions").css("display","none");
+      $(".results").css("display", "block");
     	clearInterval(myVar);    //the name of my interval is 'myVar'
     };
    };
-  };  
+  }; 
+
+
+  //function for submit button
+   function submit() {
+     $(".questions").css("display", "none");
+     $(".results").css("display", "block");
+     console.log("clicked submit button");
+     
+     
+}
 });
 
 // questions are revealed
