@@ -14,10 +14,6 @@
 	   <h1>Hair Band Trivia!</h1>
 	   <h2>Who Sang These Lyrics?<br>Kids of the 80's...you know you love them!<br>Answer all correctly within 30 seconds to win!</h2>
 	   <a class="btn btn-primary btn-md" id="start"> START </a>
-
-
-<!--how do I hide everything below on page load?-->
-
 	   <a class="btn btn-primary btn-md" id="submit"> SUBMIT ANSWERS </a>
 	   <a class="btn btn-primary btn-md" id="playAgain"> PLAY AGAIN </a>
 
@@ -26,7 +22,7 @@
     </div>
 
 <!--I'm sure it would be best to have the questions in JS, but I'll tackle that after I get it all working-->
-
+<div class="questions">
             <div class="row question">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="panel panel-default">
@@ -116,9 +112,34 @@
                     </div>
                 </div>
             </div>
+</div>
 
             
+<div class="results">
+  <div class="row question">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Your Results!</div>
+                          <div class="panel-body">
+                            <div id="rightAndWrong">
+                                <h2>Correct:
+                                  <span id="numberCorrect"></span>
+                                      <br>
+                                   Incorrect:
+                                   <span id="numberIncorrect"></span>
+                                 </h2>
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+ 
+    
+</div>
 
+
+
+  </div>
 
     
 
