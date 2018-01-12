@@ -32,7 +32,7 @@ console.log(incorrect);
 function start() {
 var myVar = setInterval(myTimer, 1000);
 
-var countDown = 3
+var countDown = 30
 
 function myTimer() {
     countDown --
