@@ -11,7 +11,7 @@ $("#start").on("click", start);
 $("#submit").on("click", submit); 
 
 $("input").on("click",function(){
-	console.log(this.className);
+  console.log(this.className);
 });
 //make values display on browser within the HTML:
 var correct = 0;
@@ -25,7 +25,7 @@ console.log(incorrect);
 //if a correct answer is chosen, ++1 to variable 'correct'
 //else, ++1 to variable 'incorrect'
 
-	
+  
 // number right and wrong resets to zero...need to create these variables
 // checked answers need to be erased
 // reset hides questions, just shows start button
@@ -42,10 +42,10 @@ $(".questions").css("display", "block");
     countDown --
     document.getElementById("timeRemaining").innerHTML = countDown;
     if (countDown === 0) {
-    	console.log("timer reached zero");
-    	$(".questions").css("display","none");
+      console.log("timer reached zero");
+      $(".questions").css("display","none");
       $(".results").css("display", "block");
-    	clearInterval(myVar);    //the name of my interval is 'myVar'
+      clearInterval(myVar);    //the name of my interval is 'myVar'
     };
   };
 }; 
@@ -68,5 +68,3 @@ $(".questions").css("display", "block");
 // submit button is revealed
 
 // when time runs out...same function as clicking submit
-
-
