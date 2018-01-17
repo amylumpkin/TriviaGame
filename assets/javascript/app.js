@@ -8,27 +8,30 @@ $(".results").css("display", "none");
 $("#start").on("click", start); 
 
 //submit answers if done before timer goes off
-$("#submit").on("click", submit); 
+//$("#submit").on("click", submit); 
 
-$("input").on("click",function(){
-  console.log(this.className);
-});
-//make values display on browser within the HTML:
 var correct = 0;
 var incorrect = 0;
 
-$("#numberCorrect").text(correct);
-$("#numberIncorrect").text(incorrect);
-console.log(correct);
-console.log(incorrect);
+$("input").on("click",function(){
+  if (this.className === "correct"){
+   ++ correct; 
+   $("#numberCorrect").text(correct);
+   console.log(correct);
+  }
+  else {
+  console.log(this.className);
+   ++ incorrect;
+   $("#numberIncorrect").text(incorrect);
+   console.log(incorrect);
+}
+});
+//make values display on browser within the HTML:
 
-//if a correct answer is chosen, ++1 to variable 'correct'
-//else, ++1 to variable 'incorrect'
 
-  
-// number right and wrong resets to zero...need to create these variables
-// checked answers need to be erased
-// reset hides questions, just shows start button
+
+
+
 
 // function for start button, starts the countdown timer:
 function start() {
